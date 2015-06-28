@@ -2016,6 +2016,7 @@ body:not(.post-template) .post-title {
 
 .newsletter {
     margin-bottom: 0.5em;
+    line-height: 2.2em;
 }
 .ac {
     color: #eabb00;
