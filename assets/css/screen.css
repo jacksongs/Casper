@@ -17,7 +17,8 @@
     10.  Footer
     11. Media Queries (Tablet)
     12. Media Queries (Mobile)
-    13. Animations
+    13. Extras
+    14. Animations
 
 */
 
@@ -118,7 +119,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* Apply these base styles to all icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "casper-icons", "Open Sans", sans-serif;
+    font-family: "casper-icons", "Oswald", sans-serif;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -185,7 +186,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
+    font-family: "Oswald", sans-serif;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
@@ -212,7 +213,7 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     text-rendering: geometricPrecision;
 }
 
@@ -493,6 +494,9 @@ body.nav-opened .site-wrapper {
             transition: transform 0.3s ease;
 }
 
+.nowrap {
+  white-space: nowrap ;
+}
 
 /* ==========================================================================
    4. General - The main styles for the the theme
@@ -698,7 +702,7 @@ body.nav-opened .nav {
     color: #111 !important; /* Overides `.nav a:link, .nav a:visited` colour */
     text-align: center;
     font-size: 12px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 35px;
@@ -870,7 +874,7 @@ body.nav-opened .nav {
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: #fff;
 }
 
@@ -879,7 +883,7 @@ body.nav-opened .nav {
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "Merriweather", serif;
+    font-family: "Oswald", sans-serif;
     letter-spacing: 0.01rem;
     color: rgba(255,255,255,0.8);
 }
@@ -961,7 +965,7 @@ body:not(.post-template) .post-title {
 .post-meta {
     display: block;
     margin: 1.75rem 0 0 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
@@ -1310,7 +1314,7 @@ body:not(.post-template) .post-title {
 /* Location, website, and link */
 .author-profile .author-meta {
     margin: 2rem 0;
-    font-family: "Merriweather", serif;
+    font-family: "Oswald", sans-serif;
     letter-spacing: 0.01rem;
     font-size: 1.7rem;
 }
@@ -1396,7 +1400,7 @@ body:not(.post-template) .post-title {
     padding: 4px 10px 5px;
     text-transform: uppercase;
     font-size: 1.1rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: rgba(255,255,255,0.8);
     border: rgba(255,255,255,0.5) 1px solid;
     border-radius: 4px;
@@ -1484,7 +1488,7 @@ body:not(.post-template) .post-title {
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
@@ -1568,7 +1572,7 @@ body:not(.post-template) .post-title {
     position: relative;
     margin: 8rem 0 0 0;
     padding: 1rem 15px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
     color: #BBC7CC;
@@ -1998,9 +2002,168 @@ body:not(.post-template) .post-title {
 
 }
 
+/* ==========================================================================
+   13. Extras
+   ========================================================================== */
+
+.check-with-label:checked ~ label {
+  box-shadow: 0px 0px 15px #12ff00;
+}
+
+.stamp {
+    font-weight: 700;
+}
+
+.newsletter {
+    margin-bottom: 0.5em;
+}
+.ac {
+    color: #eabb00;
+    background-color: #004790;
+    border-style: inset;
+    border-width: 4px;
+    border-color: #e5182c;
+}
+
+.bl {
+    color: #ffc74a;
+    background-color: #950041;
+    border-style: outset;
+    border-width: 4px;
+    border-color: #004fa7;
+}
+
+.ca {
+    color: white;
+    background-color: #002951;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #002951;
+}
+
+.co {
+    color: black;
+    background-color: white;
+    border-style: dashed;
+    border-width: 4px;
+    border-color: black;
+}
+
+.es {
+    color: black;
+    background-color: #d10500;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+}
+
+.fd {
+    color: white;
+    background-color: #31055b;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #31055b;
+}
+
+.ge {
+    color: #002256;
+    background-color: white;
+    border-style: dotted;
+    border-width: 4px;
+    border-color: #002256;
+}
+
+.gc {
+    color: #fff856;
+    background-color: #ff2e03;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #fff856;
+}
+
+.gg {
+    color: #5b5b5b;
+    background-color: #ff9900;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #5b5b5b;
+}
+
+.ha {
+    color: #562200;
+    background-color: #ffc500;
+    border-style: dashed;
+    border-width: 4px;
+    border-color: #562200;
+}
+
+
+.me {
+    color: #d60033;
+    background-color: #00476a;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #d60033;
+}
+
+.nm {
+    color: #004fa7;
+    background-color: white;
+    border-style: dashed;
+    border-width: 4px;
+    border-color: #004fa7;
+}
+
+.pa {
+    color: white;
+    background-color: #00a3b4;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+}
+
+.ri {
+    color: #ffd300;
+    background-color: black;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #ffd300;
+}
+
+.sk {
+    color: #ff3320;
+    background-color: white;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+}
+
+.sy {
+    color: white;
+    background-color: #fc1e1f;
+    border-style: outset;
+    border-width: 4px;
+    border-color: #fc1e1f;
+}
+
+.wc {
+    color: #ffc500;
+    background-color: #00275c;
+    border-style: inset;
+    border-width: 4px;
+    border-color: #d66c00;
+}
+
+.wb {
+    color: white;
+    background-color: #0037ac;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #e7052d;
+}
 
 /* ==========================================================================
-   13. Animations
+   14. Animations
    ========================================================================== */
 
 /* Used to fade in title/desc on the home page */
